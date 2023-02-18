@@ -26,6 +26,7 @@ sleep 2
 sudo apt install x11vnc freerdp2-x11 rdesktop
 echo "Criando diretório em /etc/x11vnc..." 
 sleep 2
+
 if [ -e "/etc/x11vnc" ]
 then
 echo " o diretorio existe"
@@ -34,7 +35,6 @@ echo ${e}" o diretorio não existe vamos criar o diretorio"
 sudo mkdir /etc/x11vnc
 fi
 
-
 echo   ${v}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
 sleep 2
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
@@ -42,9 +42,10 @@ echo   ${br}"Copiando arquivo de configuração...${end}"
 sleep 2
 sudo cp x11vnc/x11vnc.service /lib/systemd/system/
 echo   ${vr}"Arquivo copiado...${end}"
-sleep 2
+sleep 1
 echo "Configurando inicialização automática..."
 sleep 2
+echo "Configurando daemon-reload..."
 sudo systemctl daemon-reload 
 sleep 2
 sudo systemctl enable x11vnc.service
@@ -54,7 +55,9 @@ echo    ${vr} "Instalação concluída." ${end}
 echo    ${vr} "Copiando atalhos pra Área de Trabalho." ${end}
 sleep 2
 cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
-echo    ${vr} "Feito!" ${end}
+sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
+echo    ${vr} Removendo arquivos utilizados para a instalação e configuração." ${end}
 rm -rf /home/gmateus/x11vnc
+echo    ${vr} "Processo concluído com sucesso..." ${end}
 
