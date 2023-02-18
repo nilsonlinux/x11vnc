@@ -29,9 +29,9 @@ sleep 2
 
 if [ -e "/etc/x11vnc" ]
 then
-echo " o diretorio existe"
+echo " Diretório ja existe. Proceguindo com a instalação..."
 else
-echo ${e}" o diretorio não existe vamos criar o diretorio"
+echo ${e}" Criando o diretório"
 sudo mkdir /etc/x11vnc
 fi
 
