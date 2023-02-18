@@ -11,27 +11,27 @@ v1="\033[0;32m"   #Verde escuro
 v2="\033[1;32m"   #verde claro
 ##############################
 clear
-echo -e  ${vr}"__     ___   _  ____   ____                             ${end}"
-echo -e  ${vr}"\ \   / / \ | |/ ___| / ___|  ___ _ ____   _____ _ __   ${end}"
-echo -e  ${vr}" \ \ / /|  \| | |     \___ \ / _ \ '__\ \ / / _ \ '__|  ${end}"
-echo -e  ${vr}"  \ V / | |\  | |___   ___) |  __/ |   \ V /  __/ |     ${end}"
-echo -e  ${vr}"   \_/  |_| \_|\____| |____/ \___|_|    \_/ \___|_|     ${end}"
-echo -e  ${v1}" Instalação e configuração do VNC Server para Linux Mint ${end}"
-echo -e  ${p}" By: Nilsonlinux ${end}"
+echo     ${vr}"__     ___   _  ____   ____                             "
+echo     ${vr}"\ \   / / \ | |/ ___| / ___|  ___ _ ____   _____ _ __   "
+echo     ${vr}" \ \ / /|  \| | |     \___ \ / _ \ '__\ \ / / _ \ '__|  "
+echo     ${vr}"  \ V / | |\  | |___   ___) |  __/ |   \ V /  __/ |     "
+echo     ${vr}"   \_/  |_| \_|\____| |____/ \___|_|    \_/ \___|_|     "
+echo     ${v1}" Instalação e configuração do VNC Server para Linux Mint ${end}"
+echo     ${p}" By: Nilsonlinux ${end}"
 echo ""
-echo -e ${br}" Instalando o pacote x11vnc"
+echo    ${br}" Instalando o pacote x11vnc"
 sleep 2
 sudo apt install x11vnc
-echo "Criando diretório em /etc/x11vnc..."
+echo "Criando diretório em /etc/x11vnc..." 
 sleep 2
 sudo mkdir /etc/x11vnc
-echo -e ${v}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
+echo   ${v}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
 sleep 2
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
-echo -e ${br}"Copiando arquivo de configuração...${end}"
+echo   ${br}"Copiando arquivo de configuração...${end}"
 sleep 2
 sudo cp x11vnc/x11vnc.service /lib/systemd/system/
-echo -e ${vr}"Arquivo copiado...${end}"
+echo   ${vr}"Arquivo copiado...${end}"
 sleep 2
 echo "Configurando inicialização automática..."
 sleep 2
@@ -40,4 +40,4 @@ sleep 2
 sudo systemctl enable x11vnc.service
 sleep 2
 sudo systemctl start x11vnc.service
-echo -e  ${vr} "Instalação concluída." ${end}
+echo    ${vr} "Instalação concluída." ${end}
