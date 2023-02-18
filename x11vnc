@@ -22,6 +22,8 @@ echo     ${p}" By: Nilsonlinux ${end}"
 }
 logo
 echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp"
+logo
+echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
 sudo apt update && sudo apt install git rdesktop freerdp2-x11
 logo
 echo ${br}" Instalando o pacote x11vnc"
