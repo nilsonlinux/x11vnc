@@ -45,5 +45,5 @@ echo    ${vr} "Copiando atalhos pra Área de Trabalho." ${end}
 sleep 2
 cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
 echo    ${vr} "Feito!" ${end}
-
+sudo chmod +x Área\ de\ Trabalho/*
 
