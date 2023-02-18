@@ -60,3 +60,4 @@ sudo chmod +x Área\ de\ Trabalho/*
 echo ${vr} Removendo arquivos utilizados para a instalação e configuração. ${end}"
 rm -rf /home/gmateus/x11vnc
 echo ${vr} "Processo concluído com sucesso..." ${end}
+fi
