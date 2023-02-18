@@ -22,14 +22,17 @@ echo     ${p}" By: Nilsonlinux ${end}"
 }
 logo
 echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp"
-logo
-echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
 sudo apt update && sudo apt install git rdesktop freerdp2-x11
 logo
+echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
 echo ${br}" Instalando o pacote x11vnc"
 sleep 2
 sudo apt install x11vnc freerdp2-x11 rdesktop
+logo
+echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
 echo "Criando diretório em /etc/x11vnc..." 
+echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
+echo "Criando diretório em /etc/x11vnc (OK)" 
 sleep 2
 
 if [ -e "/etc/x11vnc" ]
