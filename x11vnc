@@ -24,9 +24,9 @@ logo
 echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp"
 sudo apt update && sudo apt install git rdesktop freerdp2-x11
 logo
-echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
-echo ${br}" Instalando o pacote x11vnc"
-sleep 2
+echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
+echo " Instalando o pacote x11vnc"
+sleep 1
 sudo apt install x11vnc freerdp2-x11 rdesktop
 logo
 echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
@@ -37,7 +37,7 @@ sleep 2
 
 if [ -e "/etc/x11vnc" ]
 then
-echo " Diretório ja existe. Proceguindo com a instalação..."
+echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
 echo ${e}" Criando o diretório"
 sudo mkdir /etc/x11vnc
