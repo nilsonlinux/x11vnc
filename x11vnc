@@ -26,7 +26,15 @@ sleep 2
 sudo apt install x11vnc freerdp2-x11 rdesktop
 echo "Criando diretório em /etc/x11vnc..." 
 sleep 2
+if [ -e "/etc/x11vnc" ]
+then
+echo " o diretorio existe"
+else
+echo ${e}" o diretorio não existe vamos criar o diretorio"
 sudo mkdir /etc/x11vnc
+fi
+
+
 echo   ${v}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
 sleep 2
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
