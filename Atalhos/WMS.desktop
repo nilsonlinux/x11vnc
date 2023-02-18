@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=N GM
+Exec=rdesktop 192.168.6.29 -g 600x600
+Comment=
+Terminal=false
+Icon=cinnamon-panel-launcher
+Type=Application
+Name[pt_BR]=WMS

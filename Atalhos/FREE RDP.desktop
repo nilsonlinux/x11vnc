@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=teste
+Exec=xfreerdp +clipboard /cert-ignore /u:gmcore /p:gmcore /v:192.168.6.126 /sec:rdp /size:1925x1010
+Comment=
+Terminal=false
+Icon=cinnamon-panel-launcher
+Type=Application
+Name[pt_BR]=FREE RDP

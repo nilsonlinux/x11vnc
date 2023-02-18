@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=6.126
+Exec=rdesktop 192.168.6.126 -u ts -p ts -g 1925x1010 -b
+Comment=
+Terminal=false
+Icon=cinnamon-panel-launcher
+Type=Application
+Name[pt_BR]=RDESKTOP
