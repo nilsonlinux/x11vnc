@@ -1,0 +1,6 @@
+ #!/bin/bash
+  #####################################################################################
+  #### SUPORTE REGIONAL - PE/PB/AL/RN
+  #####################################################################################
+sudo apt install git && git clone https://github.com/nilsonlinux/x11vnc.git && chmod +x ./x11vnc/x11vnc && sudo ./x11vnc/x11vnc
+
