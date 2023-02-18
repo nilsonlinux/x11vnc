@@ -29,9 +29,12 @@ echo " Instalando o pacote x11vnc"
 sleep 1
 sudo apt install x11vnc freerdp2-x11 rdesktop
 logo
-echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
+echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
+echo " Instalando o pacote x11vnc (OK)"
 echo "Criando diretório em /etc/x11vnc..." 
-echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
+logo
+echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
+echo " Instalando o pacote x11vnc (OK)"
 echo "Criando diretório em /etc/x11vnc (OK)" 
 sleep 2
 
