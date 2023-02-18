@@ -33,8 +33,9 @@ echo " o diretorio existe"
 else
 echo ${e}" o diretorio não existe vamos criar o diretorio"
 sudo mkdir /etc/x11vnc
+fi
 
-echo   ${v}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
+echo   ${a}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
 sleep 2
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
 echo   ${br}"Copiando arquivo de configuração...${end}"
@@ -51,11 +52,11 @@ sudo systemctl enable x11vnc.service
 sleep 2
 sudo systemctl start x11vnc.service
 echo    ${vr} "Instalação concluída." ${end}
-echo    ${vr} "Copiando atalhos pra Área de Trabalho." ${end}
+echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
 sleep 2
 cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
-echo ${vr} Removendo arquivos utilizados para a instalação e configuração." ${end}
+echo ${vr} Removendo arquivos utilizados para a instalação e configuração. ${end}"
 rm -rf /home/gmateus/x11vnc
 echo ${vr} "Processo concluído com sucesso..." ${end}
