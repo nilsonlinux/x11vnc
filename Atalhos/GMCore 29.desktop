@@ -1,8 +1,8 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Name=GMCore 29
-Exec=rdesktop 192.168.6.36 -g 1925x1010
+Name=GMCORE 6.36
+Exec=rdesktop -u ts -p ts ts.mateus -g 1925x1010 -T GMCORE
 Comment=
 Terminal=false
-Icon=cinnamon-panel-launcher
+Icon=/home/gmateus/.icons/6.36.png
 Type=Application
