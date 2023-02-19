@@ -65,6 +65,7 @@ sudo systemctl start x11vnc.service
 echo    ${vr} "Instalação concluída." ${end}
 echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
 sleep 2
+cp /home/gmateus/x11vnc/icons/* /home/gmateus/.icons/
 cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
