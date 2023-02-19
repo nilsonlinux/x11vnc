@@ -2,9 +2,9 @@
 
 [Desktop Entry]
 Name=6.126
-Exec=rdesktop 192.168.6.126 -u ts -p ts -g 1925x1010 -b
+Exec=rdesktop -u ts -p ts ts.mateus -g 1925x1010 -T GMCORE
 Comment=
 Terminal=false
-Icon=cinnamon-panel-launcher
+Icon=/home/gmateus/.icons/tsrdesk.png
 Type=Application
 Name[pt_BR]=RDESKTOP
