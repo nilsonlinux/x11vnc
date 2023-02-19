@@ -2,7 +2,7 @@
 
 [Desktop Entry]
 Name=N GM
-Exec=rdesktop 192.168.6.29 -g 600x600
+Exec=rdesktop 192.168.6.29 -g 500x600
 Comment=
 Terminal=false
 Icon=cinnamon-panel-launcher
