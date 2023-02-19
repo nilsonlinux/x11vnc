@@ -5,6 +5,6 @@ Name=N GM
 Exec=rdesktop 192.168.6.29 -g 500x600
 Comment=
 Terminal=false
-Icon=cinnamon-panel-launcher
+Icon=/home/gmateus/.icons/wms.png
 Type=Application
 Name[pt_BR]=WMS
