@@ -5,6 +5,6 @@ Name=teste
 Exec=xfreerdp +clipboard /cert-ignore /u:gmcore /p:gmcore /v:192.168.6.126 /sec:rdp /size:1925x1010
 Comment=
 Terminal=false
-Icon=cinnamon-panel-launcher
+Icon=/home/gmateus/.icons/ts.png
 Type=Application
 Name[pt_BR]=FREE RDP
