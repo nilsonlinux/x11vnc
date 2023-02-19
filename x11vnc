@@ -69,6 +69,5 @@ cp /home/gmateus/x11vnc/icons/* /home/gmateus/.icons/
 cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
-echo  ${vr} Removendo arquivos utilizados para a instalação e configuração.
 rm -rf /home/gmateus/x11vnc
 echo ${vr} ""Processo concluído com sucesso...
