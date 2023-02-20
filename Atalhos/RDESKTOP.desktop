@@ -2,7 +2,7 @@
 
 [Desktop Entry]
 Name=6.126
-Exec=rdesktop -u ts -p ts ts.mateus -g 1925x1010 -T GMCORE
+Exec=rdesktop -u ts -p ts 192.168.6.126 -g 1925x1010 -T GMCORE
 Comment=
 Terminal=false
 Icon=/home/gmateus/.icons/tsrdesk.png
