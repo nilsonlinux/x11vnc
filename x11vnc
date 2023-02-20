@@ -27,7 +27,10 @@ logo
 echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
 echo " Instalando o pacote x11vnc"
 sleep 1
-sudo apt install x11vnc freerdp2-x11 rdesktop
+sudo apt install x11vnc freerdp2-x11 rdesktop openssh-server
+sudo systemctl enable ssh
+sudo systemctl start ssh
+sudo ufw allow ssh
 logo
 echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
 echo " Instalando o pacote x11vnc (OK)"
