@@ -50,24 +50,18 @@ sudo mkdir /etc/x11vnc
 fi
 
 echo   ${a}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
-sleep 2
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
 echo   ${br}"Copiando arquivo de configuração...${end}"
-sleep 2
 sudo cp x11vnc/x11vnc.service /lib/systemd/system/
 echo   ${vr}"Arquivo copiado...${end}"
-sleep 1
 echo "Configurando inicialização automática..."
-sleep 2
 echo "Configurando daemon-reload..."
 sudo systemctl daemon-reload 
-sleep 2
 sudo systemctl enable x11vnc.service
-sleep 2
 sudo systemctl start x11vnc.service
 echo    ${vr} "Instalação concluída." ${end}
 echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
-sleep 2
+
 
 if [ -e "/home/gmateus/.icons" ]
 then
