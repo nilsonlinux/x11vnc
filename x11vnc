@@ -69,6 +69,3 @@ echo    ${vr} "Instalação concluída." ${end}
 echo " ------------------------------------- "
 echo "IP da Máquina: 🌐" 
 hostname -I 
-echo " ------------------------------------- "
-echo ""
-echo -e $v1 "PROCESSO CONCLUÍDO COM SUCESSO..."$end
