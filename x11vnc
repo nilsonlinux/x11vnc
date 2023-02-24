@@ -15,11 +15,11 @@ logo () {
 clear
 echo -e  ${vr}"__     ___   _  ____   ____                             
        \ \   / / \ | |/ ___| / ___|  ___ _ ____   _____ _ __   
-     " \ \ / /|  \| | |     \___ \ / _ \ '__\ \ / / _ \ '__|  
-     "  \ V / | |\  | |___   ___) |  __/ |   \ V /  __/ |     "
-     "   \_/  |_| \_|\____| |____/ \___|_|    \_/ \___|_|     "
-     ${v1}" Instalação e configuração do VNC Server para Linux Mint ${end}"
-     ${p}" By: Nilsonlinux ${end}"
+      \ \ / /|  \| | |     \___ \ / _ \ '__\ \ / / _ \ '__|  
+       \ V / | |\  | |___   ___) |  __/ |   \ V /  __/ |     
+        \_/  |_| \_|\____| |____/ \___|_|    \_/ \___|_|    
+     ${v1} Instalação e configuração do VNC Server para Linux Mint ${end}"
+     ${p} By: Nilsonlinux ${end}"
 }
 echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
 echo " ------------------------------------- "
