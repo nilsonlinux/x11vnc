@@ -45,8 +45,6 @@ echo -e "${p}INSTALANDO PACOTES...${end}"
 sudo apt update && sudo apt install yad x11vnc freerdp2-x11 rdesktop openssh-server
 logo
 echo " ------------------------------------- "
-echo " Instalando o pacote x11vnc"
-sleep 1
 sudo systemctl enable ssh
 sudo systemctl start ssh
 sudo ufw allow ssh
