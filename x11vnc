@@ -11,15 +11,7 @@ v1="\033[0;32m"    #Verde escuro
 v2="\033[1;32m"    #verde claro
 end='\033[0m'
 ##############################
-logo () {
-clear
-echo -e ${vr}" __     ___   _  ____   ____                             
-               \ \   / / \ | |/ ___| / ___|  ___ _ ____   _____ _ __   
-                \ \ / /|  \| | |     \___ \ / _ \ '__\ \ / / _ \ '__|  
-                 \ V / | |\  | |___   ___) |  __/ |   \ V /  __/ |     
-                  \_/  |_| \_|\____| |____/ \___|_|    \_/ \___|_|    
-     ${v1} Instalação e configuração do VNC Server para Linux Mint ${end}"
-     ${p} By: Nilsonlinux ${end}"
+ echo -e ${v1}"Instalação e configuração do VNC Server para Linux Mint ${end}
 }
 echo -e ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
 echo " ------------------------------------- "
@@ -35,7 +27,6 @@ sleep 1
 #sudo chmod +x Área\ de\ Trabalho/*
 #rm -rf /home/gmateus/x11vnc
 
-echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp"
 sudo apt update && sudo apt install x11vnc freerdp2-x11 rdesktop openssh-server
 logo
 echo " ------------------------------------- "
