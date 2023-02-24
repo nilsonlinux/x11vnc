@@ -11,6 +11,16 @@ v1="\033[0;32m"    #Verde escuro
 v2="\033[1;32m"    #verde claro
 end='\033[0m'
 ##############################
+logo () {
+  clear
+echo -e "${v1} __     ___   _  ____    ______ ____  _   _ 
+\ \   / / \ | |/ ___|  / / ___/ ___|| | | |
+ \ \ / /|  \| | |     / /\___ \___ \| |_| |
+  \ V / | |\  | |___ / /  ___) |__) |  _  |
+   \_/  |_| \_|\____/_/  |____/____/|_| |_|${end}" 
+ }
+##############################
+logo
 echo -e "${v1}Instalação e configuração do VNC Server para Linux Mint ${end}"
 echo -e "${vr}Copiando atalhos pra Área de Trabalho.${end}"
 echo " ------------------------------------- "
@@ -20,11 +30,11 @@ echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
 mkdir $HOME/.icons
 fi
-cp $HOME/x11vnc/icons/* /home/gmateus/.icons/
+cp $HOME/x11vnc/icons/* $HOME/.icons/
 cp $HOME/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sudo chmod +x Área\ de\ Trabalho/*
-rm -rf /home/gmateus/x11vnc
-echo -e "${v}INSTALANDO PACOTES${end}"
+rm -rf $HOME/x11vnc
+echo -e "${p}INSTALANDO PACOTES${end}"
 sudo apt update && sudo apt install x11vnc freerdp2-x11 rdesktop openssh-server
 logo
 echo " ------------------------------------- "
