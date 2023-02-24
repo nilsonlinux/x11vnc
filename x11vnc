@@ -68,4 +68,4 @@ cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
 rm -rf /home/gmateus/x11vnc
-echo ${vr} " Processo concluído com sucesso... $end"
+echo -e ${vr} " Processo concluído com sucesso... $end"
