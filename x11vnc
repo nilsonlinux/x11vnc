@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
   #####################################################################################
   #### SUPORTE REGIONAL - PE/PB/AL/RN
   #####################################################################################
@@ -21,6 +21,20 @@ echo     ${vr}"   \_/  |_| \_|\____| |____/ \___|_|    \_/ \___|_|     "
 echo     ${v1}" Instalação e configuração do VNC Server para Linux Mint ${end}"
 echo     ${p}" By: Nilsonlinux ${end}"
 }
+echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
+echo " ------------------------------------- "
+if [ -e "/home/gmateus/.icons" ]
+then
+echo " Diretório ja existe. Prosseguindo com a instalação..."
+else
+mkdir $HOME/.icons
+fi
+cp $HOME/x11vnc/icons/* /home/gmateus/.icons/
+cp $HOME/x11vnc/Atalhos/* Área\ de\ Trabalho/
+sleep 1
+#sudo chmod +x Área\ de\ Trabalho/*
+#rm -rf /home/gmateus/x11vnc
+
 echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp"
 sudo apt update && sudo apt install x11vnc freerdp2-x11 rdesktop openssh-server
 logo
@@ -53,22 +67,9 @@ sudo systemctl daemon-reload
 sudo systemctl enable x11vnc.service
 sudo systemctl start x11vnc.service
 echo    ${vr} "Instalação concluída." ${end}
-echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
-echo " ------------------------------------- "
-if [ -e "/home/gmateus/.icons" ]
-then
-echo " Diretório ja existe. Prosseguindo com a instalação..."
-else
-mkdir /home/gmateus/.icons
-fi
 echo " ------------------------------------- "
 echo "IP da Máquina: 🌐" 
 hostname -I 
 echo " ------------------------------------- "
-cp /home/gmateus/x11vnc/icons/* /home/gmateus/.icons/
-cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
-sleep 1
-sudo chmod +x Área\ de\ Trabalho/*
-rm -rf /home/gmateus/x11vnc
 echo ""
-echo $v1 "PROCESSO CONCLUÍDO COM SUCESSO..."$end
+echo $v1"PROCESSO CONCLUÍDO COM SUCESSO..."$end
