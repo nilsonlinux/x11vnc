@@ -21,7 +21,7 @@ echo     ${v1}" Instalação e configuração do VNC Server para Linux Mint ${en
 echo     ${p}" By: Nilsonlinux ${end}"
 }
 logo
-echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp"
+echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp"
 sudo apt update && sudo apt install x11vnc freerdp2-x11 rdesktop openssh-server
 
 echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
