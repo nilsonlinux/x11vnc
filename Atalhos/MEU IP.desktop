@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment=
-Exec=/home/Nilsonlinux/.local/comandos/ip.sh
-Icon=/home/Nilsonlinux/.icons/ip.png
+Exec=/home/gmateus/.local/comandos/ip.sh
+Icon=/home/gmateus/.icons/ip.png
 Name=MEU IP
 Terminal=false
 Type=Application
