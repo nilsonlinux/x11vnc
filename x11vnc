@@ -68,5 +68,5 @@ sudo systemctl start x11vnc.service
 echo -e "${vr} Instalação concluída. ${end}"
 echo " ------------------------------------- "
 IP=$(hostname -I)
-echo "IP da Máquina: ${IP}🌐" 
+echo "IP da Máquina 🌐: ${IP}" 
 echo " ------------------------------------- "
