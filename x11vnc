@@ -23,24 +23,22 @@ echo     ${p}" By: Nilsonlinux ${end}"
 logo
 echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp"
 sudo apt update && sudo apt install x11vnc freerdp2-x11 rdesktop openssh-server
-
+echo " ------------------------------------- "
 echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
 echo " Instalando o pacote x11vnc"
 sleep 1
 sudo systemctl enable ssh
 sudo systemctl start ssh
 sudo ufw allow ssh
-
+echo " ------------------------------------- "
 echo "Criando diretório em /etc/x11vnc..." 
-
 if [ -e "/etc/x11vnc" ]
 then
 echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
 echo ${e}" Criando o diretório"
 sudo mkdir /etc/x11vnc
-fi
-
+fiecho " ------------------------------------- "
 echo   ${a}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
 echo   ${br}"Copiando arquivo de configuração...${end}"
@@ -53,8 +51,7 @@ sudo systemctl enable x11vnc.service
 sudo systemctl start x11vnc.service
 echo    ${vr} "Instalação concluída." ${end}
 echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
-
-
+echo " ------------------------------------- "
 if [ -e "/home/gmateus/.icons" ]
 then
 echo " Diretório ja existe. Prosseguindo com a instalação..."
@@ -62,7 +59,7 @@ else
 echo ${e}" Criando o diretório"
 mkdir /home/gmateus/.icons
 fi
-
+echo " ------------------------------------- "
 echo "IP : " 
 hostname -I 
 cp /home/gmateus/x11vnc/icons/* /home/gmateus/.icons/
