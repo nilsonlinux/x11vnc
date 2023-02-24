@@ -9,6 +9,7 @@ vr="\033[01;32m"   #Verde
 br="\033[0;37m"    #Branco
 v1="\033[0;32m"    #Verde escuro
 v2="\033[1;32m"    #verde claro
+end='\033[0m'
 ##############################
 logo () {
 clear
@@ -67,4 +68,4 @@ cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
 rm -rf /home/gmateus/x11vnc
-echo ${vr} " Processo concluído com sucesso... "
+echo ${vr} " Processo concluído com sucesso... $end"
