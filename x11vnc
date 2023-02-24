@@ -41,14 +41,14 @@ if [ -e "/etc/x11vnc" ]
 then
 echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
-echo ${e}" Criando o diretório"
+echo -e ${e}" Criando o diretório"
 sudo mkdir /etc/x11vnc
 fi
 echo " ------------------------------------- "
-echo  ${a}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
-echo $v1
+echo -e ${a}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
+
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
-echo   ${br}"Copiando arquivo de configuração...${end}"
+echo -e ${br}"Copiando arquivo de configuração...${end}"
 sudo cp x11vnc/x11vnc.service /lib/systemd/system/
 echo   ${vr}"Arquivo copiado...${end}"
 echo "Configurando inicialização automática..."
@@ -56,7 +56,7 @@ echo "Configurando daemon-reload..."
 sudo systemctl daemon-reload 
 sudo systemctl enable x11vnc.service
 sudo systemctl start x11vnc.service
-echo    ${vr} "Instalação concluída." ${end}
+echo -e ${vr} "Instalação concluída." ${end}
 echo " ------------------------------------- "
 echo "IP da Máquina: 🌐" 
 hostname -I 
