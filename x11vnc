@@ -18,12 +18,11 @@ echo -e "${v1} __     ___   _  ____    ______ ____  _   _
  \ \ / /|  \| | |     / /\___ \___ \| |_| |
   \ V / | |\  | |___ / /  ___) |__) |  _  |
    \_/  |_| \_|\____/_/  |____/____/|_| |_|
-   ${y}By: Nilsonlinux
+   ${p}By: Nilsonlinux
    ${v1}Instalação e configuração do VNC Server para Linux Mint ${end}"
  }
 ##############################
 logo
-echo -e "${v1}Instalação e configuração do VNC Server para Linux Mint ${end}"
 echo -e "${vr}Copiando atalhos pra Área de Trabalho.${end}"
 echo " ------------------------------------- "
 if [ -e "$HOME/.icons" ]
