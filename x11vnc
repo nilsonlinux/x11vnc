@@ -55,20 +55,20 @@ sudo systemctl start x11vnc.service
 echo    ${vr} "Instalação concluída." ${end}
 echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
 echo " ------------------------------------- "
-if [ -e "/home/$USER/.icons" ]
+if [ -e "/home/gmateus/.icons" ]
 then
 echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
-mkdir /home/$USER/.icons
+mkdir /home/gmateus/.icons
 fi
 echo " ------------------------------------- "
 echo "IP da Máquina: 🌐" 
 hostname -I 
 echo " ------------------------------------- "
-cp /home/$USER/x11vnc/icons/* /home/gmateus/.icons/
-cp /home/$USER/x11vnc/Atalhos/* Área\ de\ Trabalho/
+cp /home/gmateus/x11vnc/icons/* /home/gmateus/.icons/
+cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
-rm -rf /home/$USER/x11vnc
+rm -rf /home/gmateus/x11vnc
 echo ""
 echo $v1"PROCESSO CONCLUÍDO COM SUCESSO..."$end
