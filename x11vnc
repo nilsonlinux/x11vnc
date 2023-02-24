@@ -22,9 +22,8 @@ mkdir $HOME/.icons
 fi
 cp $HOME/x11vnc/icons/* /home/gmateus/.icons/
 cp $HOME/x11vnc/Atalhos/* Área\ de\ Trabalho/
-sleep 1
-#sudo chmod +x Área\ de\ Trabalho/*
-#rm -rf /home/gmateus/x11vnc
+sudo chmod +x Área\ de\ Trabalho/*
+rm -rf /home/gmateus/x11vnc
 
 sudo apt update && sudo apt install x11vnc freerdp2-x11 rdesktop openssh-server
 logo
@@ -40,22 +39,22 @@ if [ -e "/etc/x11vnc" ]
 then
 echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
-echo -e ${e}" Criando o diretório"
+echo -e "${e} Criando o diretório"
 sudo mkdir /etc/x11vnc
 fi
 echo " ------------------------------------- "
 echo -e ${a}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
-
+echo -e $v1"
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
-echo -e ${br}"Copiando arquivo de configuração...${end}"
+echo -e "${br}Copiando arquivo de configuração...${end}"
 sudo cp x11vnc/x11vnc.service /lib/systemd/system/
-echo -e ${vr}"Arquivo copiado...${end}"
+echo -e "${vr}Arquivo copiado...${end}"
 echo "Configurando inicialização automática..."
 echo "Configurando daemon-reload..."
 sudo systemctl daemon-reload 
 sudo systemctl enable x11vnc.service
 sudo systemctl start x11vnc.service
-echo -e ${vr} "Instalação concluída." ${end}
+echo -e "${vr} Instalação concluída. ${end}"
 echo " ------------------------------------- "
 echo "IP da Máquina: 🌐" 
 hostname -I 
