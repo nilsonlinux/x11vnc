@@ -62,7 +62,7 @@ echo ${e}" Criando o diretório 📁"
 mkdir /home/gmateus/.icons
 fi
 echo " ------------------------------------- "
-echo "🖥 IP da Máquina: " 
+echo "IP da Máquina: 🌐" 
 hostname -I 
 echo " ------------------------------------- "
 cp /home/gmateus/x11vnc/icons/* /home/gmateus/.icons/
@@ -71,4 +71,4 @@ sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
 rm -rf /home/gmateus/x11vnc
 echo ""
-echo $v1"PROCESSO CONSLUÍDO COM SUCESSO"$end
+echo $v1"PROCESSO CONSLUÍDO COM SUCESSO..."$end
