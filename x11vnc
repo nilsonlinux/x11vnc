@@ -71,4 +71,4 @@ sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
 rm -rf /home/gmateus/x11vnc
 echo ""
-echo $v1"PROCESSO CONCLUÍDO COM SUCESSO..."$end
+echo $v1 "PROCESSO CONCLUÍDO COM SUCESSO..."$end
