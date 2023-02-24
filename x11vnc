@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
   #####################################################################################
   #### SUPORTE REGIONAL - PE/PB/AL/RN
   #####################################################################################
@@ -32,12 +32,11 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 sudo ufw allow ssh
 echo " ------------------------------------- "
-echo "Criando diretório em /etc/x11vnc..." 
+echo "Criando diretório em /etc/x11vnc" 
 if [ -e "/etc/x11vnc" ]
 then
 echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
-echo ${e}" Criando o diretório"
 sudo mkdir /etc/x11vnc
 fi
 echo " ------------------------------------- "
@@ -53,13 +52,13 @@ sudo systemctl daemon-reload
 sudo systemctl enable x11vnc.service
 sudo systemctl start x11vnc.service
 echo    ${vr} "Instalação concluída." ${end}
-echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
+echo    ${vr} "Copiando atalhos pra Área de Trabalho. Ok${end}"
 echo " ------------------------------------- "
 if [ -e "/home/gmateus/.icons" ]
 then
 echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
-echo ${e}" Criando o diretório 📁"
+#Criar diretório.
 mkdir /home/gmateus/.icons
 fi
 echo " ------------------------------------- "
