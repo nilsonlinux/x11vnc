@@ -21,7 +21,6 @@ echo     ${vr}"   \_/  |_| \_|\____| |____/ \___|_|    \_/ \___|_|     "
 echo     ${v1}" Instalação e configuração do VNC Server para Linux Mint ${end}"
 echo     ${p}" By: Nilsonlinux ${end}"
 }
-logo
 echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp"
 sudo apt update && sudo apt install x11vnc freerdp2-x11 rdesktop openssh-server
 echo " ------------------------------------- "
@@ -59,15 +58,17 @@ if [ -e "/home/gmateus/.icons" ]
 then
 echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
-echo ${e}" Criando o diretório"
+echo ${e}" Criando o diretório 📁"
 mkdir /home/gmateus/.icons
 fi
 echo " ------------------------------------- "
-echo "IP : " 
+echo "🖥 IP da Máquina: " 
 hostname -I 
+echo " ------------------------------------- "
 cp /home/gmateus/x11vnc/icons/* /home/gmateus/.icons/
 cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
 rm -rf /home/gmateus/x11vnc
-echo $v1"Processo consluído com sucesso"$end
+echo ""
+echo $v1"PROCESSO CONSLUÍDO COM SUCESSO"$end
