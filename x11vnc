@@ -21,7 +21,7 @@ echo -e ${vr}" __     ___   _  ____   ____
      ${v1} Instalação e configuração do VNC Server para Linux Mint ${end}"
      ${p} By: Nilsonlinux ${end}"
 }
-echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
+echo -e ${vr}"Copiando atalhos pra Área de Trabalho.${end}"
 echo " ------------------------------------- "
 if [ -e "$HOME/.icons" ]
 then
