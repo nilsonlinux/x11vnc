@@ -32,6 +32,10 @@ echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
 mkdir $HOME/.icons
 fi
+
+mkdir $HOME/.local/comandos
+cp $HOME/x11vnc/comandos/* $HOME/.local/comandos/
+
 cp $HOME/x11vnc/icons/* $HOME/.icons/
 cp $HOME/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sudo chmod +x Área\ de\ Trabalho/*
