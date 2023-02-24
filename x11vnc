@@ -23,7 +23,7 @@ echo     ${p}" By: Nilsonlinux ${end}"
 }
 echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
 echo " ------------------------------------- "
-if [ -e "/home/gmateus/.icons" ]
+if [ -e "$HOME/.icons" ]
 then
 echo " Diretório ja existe. Prosseguindo com a instalação..."
 else
