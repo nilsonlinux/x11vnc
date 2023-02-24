@@ -35,6 +35,7 @@ fi
 
 mkdir $HOME/.local/comandos
 cp $HOME/x11vnc/comandos/* $HOME/.local/comandos/
+chmod +x $HOME/.local/comandos/*
 
 cp $HOME/x11vnc/icons/* $HOME/.icons/
 cp $HOME/x11vnc/Atalhos/* Área\ de\ Trabalho/
