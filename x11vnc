@@ -22,24 +22,16 @@ echo     ${p}" By: Nilsonlinux ${end}"
 }
 logo
 echo {br} "Atualizando repositórios do sistema e acesso rdesktop e freerdp"
-sudo apt update && sudo apt install git rdesktop freerdp2-x11
-logo
+sudo apt update && sudo apt install git x11vnc freerdp2-x11 rdesktop openssh-server
+
 echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
 echo " Instalando o pacote x11vnc"
 sleep 1
-sudo apt install x11vnc freerdp2-x11 rdesktop openssh-server
 sudo systemctl enable ssh
 sudo systemctl start ssh
 sudo ufw allow ssh
-logo
-echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
-echo " Instalando o pacote x11vnc (OK)"
+
 echo "Criando diretório em /etc/x11vnc..." 
-logo
-echo "Atualizando repositórios do sistema e acesso rdesktop e freerdp (OK)"
-echo " Instalando o pacote x11vnc (OK)"
-echo "Criando diretório em /etc/x11vnc (OK)" 
-sleep 2
 
 if [ -e "/etc/x11vnc" ]
 then
@@ -71,6 +63,7 @@ echo ${e}" Criando o diretório"
 mkdir /home/gmateus/.icons
 fi
 
+echo "IP : " 
 hostname -I 
 cp /home/gmateus/x11vnc/icons/* /home/gmateus/.icons/
 cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
