@@ -11,8 +11,7 @@ v1="\033[0;32m"    #Verde escuro
 v2="\033[1;32m"    #verde claro
 end='\033[0m'
 ##############################
- echo -e ${v1}"Instalação e configuração do VNC Server para Linux Mint ${end}"
-}
+echo -e ${v1}"Instalação e configuração do VNC Server para Linux Mint ${end}"
 echo -e ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
 echo " ------------------------------------- "
 if [ -e "$HOME/.icons" ]
