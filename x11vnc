@@ -41,7 +41,7 @@ echo ${e}" Criando o diretório"
 sudo mkdir /etc/x11vnc
 fi
 echo " ------------------------------------- "
-echo   ${a}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
+echo  ${a}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
 echo   ${br}"Copiando arquivo de configuração...${end}"
 sudo cp x11vnc/x11vnc.service /lib/systemd/system/
@@ -69,4 +69,4 @@ cp /home/gmateus/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sleep 1
 sudo chmod +x Área\ de\ Trabalho/*
 rm -rf /home/gmateus/x11vnc
-echo $v"Processo consluído com sucesso"$end
+echo $v1"Processo consluído com sucesso"$end
