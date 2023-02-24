@@ -11,7 +11,7 @@ v1="\033[0;32m"    #Verde escuro
 v2="\033[1;32m"    #verde claro
 end='\033[0m'
 ##############################
- echo -e ${v1}"Instalação e configuração do VNC Server para Linux Mint ${end}
+ echo -e ${v1}"Instalação e configuração do VNC Server para Linux Mint ${end}"
 }
 echo -e ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
 echo " ------------------------------------- "
@@ -50,7 +50,7 @@ echo -e ${a}"Informe a senha de acesso para quando for fazer o acesso VNC nesta 
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
 echo -e ${br}"Copiando arquivo de configuração...${end}"
 sudo cp x11vnc/x11vnc.service /lib/systemd/system/
-echo   ${vr}"Arquivo copiado...${end}"
+echo -e ${vr}"Arquivo copiado...${end}"
 echo "Configurando inicialização automática..."
 echo "Configurando daemon-reload..."
 sudo systemctl daemon-reload 
