@@ -13,13 +13,13 @@ end='\033[0m'
 ##############################
 logo () {
 clear
-echo     ${vr}"__     ___   _  ____   ____                             "
-echo     ${vr}"\ \   / / \ | |/ ___| / ___|  ___ _ ____   _____ _ __   "
-echo     ${vr}" \ \ / /|  \| | |     \___ \ / _ \ '__\ \ / / _ \ '__|  "
-echo     ${vr}"  \ V / | |\  | |___   ___) |  __/ |   \ V /  __/ |     "
-echo     ${vr}"   \_/  |_| \_|\____| |____/ \___|_|    \_/ \___|_|     "
-echo     ${v1}" Instalação e configuração do VNC Server para Linux Mint ${end}"
-echo     ${p}" By: Nilsonlinux ${end}"
+echo -e  ${vr}"__     ___   _  ____   ____                             
+       \ \   / / \ | |/ ___| / ___|  ___ _ ____   _____ _ __   
+     " \ \ / /|  \| | |     \___ \ / _ \ '__\ \ / / _ \ '__|  
+     "  \ V / | |\  | |___   ___) |  __/ |   \ V /  __/ |     "
+     "   \_/  |_| \_|\____| |____/ \___|_|    \_/ \___|_|     "
+     ${v1}" Instalação e configuração do VNC Server para Linux Mint ${end}"
+     ${p}" By: Nilsonlinux ${end}"
 }
 echo    ${vr} "Copiando atalhos pra Área de Trabalho.${end}"
 echo " ------------------------------------- "
