@@ -44,7 +44,7 @@ sudo mkdir /etc/x11vnc
 fi
 echo " ------------------------------------- "
 echo -e ${a}"Informe a senha de acesso para quando for fazer o acesso VNC nesta máquina...${end}"
-echo -e $v1"
+echo -e "$v1-------------------------------------"
 sudo x11vnc --storepasswd /etc/x11vnc/vncpwd 
 echo -e "${br}Copiando arquivo de configuração...${end}"
 sudo cp x11vnc/x11vnc.service /lib/systemd/system/
