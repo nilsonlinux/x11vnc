@@ -5,6 +5,8 @@
   #####################################################################################
 # #####################################################################################
   NOME_PROG="ADICIONAR IMPRESSORA"
+  THEME="Mint-Y-Dark-Blue"
+  #/usr/share/themes/Mint-Y-Dark-Blue
   #####################################################################################
   #############################   VERIFICAÇÃO DE CONEXÃO   ############################
   #####################################################################################
@@ -13,9 +15,9 @@
     NOME=
     IP=
     ###############################################################################################
-      FORMULARY=$(GTK_THEME="$THEME" yad --form --borders=10 --center --width=550      \
-          --window-icon="gtk-execute"  --image="printer-printing" --item-separator=","          \
-          --title "$NOME_PROG - VERSÃO $ver"                                                      \
+      FORMULARY=$(GTK_THEME="$THEME" yad --form --borders=10 --center --width=550                 \
+          --window-icon="gtk-execute"  --image="printer-printing" --item-separator=","            \
+          --title "$NOME_PROG"                                                                    \
           --form                                                                                  \
           --field="N O M E  S E T O R" $NOME ""                                                   \
           --field="I P  D A  I M P R E S O R A" $IP ""                                            \
