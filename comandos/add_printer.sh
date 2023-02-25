@@ -29,7 +29,7 @@
       done
 #########################################################################
 sudo lpadmin -p ${SETOR} -E -v socket://${IP}
-sudo cp $HOME/x11vnc/x11vc/impressora.ppd /etc/cups/&{SETOR}.ppd
+sudo cp $HOME/x11vnc/x11vnc/impressora.ppd /etc/cups/&{SETOR}.ppd
 rm -rf $HOME/x11vnc
 ##########################################################################
 xdg-open http://localhost:631/printers/${SETOR}
