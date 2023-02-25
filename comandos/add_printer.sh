@@ -14,7 +14,7 @@
     IP=
     ###############################################################################################
             yad --form --borders=10 --center --width=550                                          \
-          --window-icon="gtk-execute"  --image="printer-printing" --item-separator=","          \
+          --window-icon="gtk-execute"  --image="printer-printing" --item-separator=","            \
           --title "$NOME_PROG - VERSÃO $ver"                                                      \
           --form                                                                                  \
           --field="N O M E  S E T O R" $NOME ""                                                   \
