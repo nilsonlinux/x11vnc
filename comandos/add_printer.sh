@@ -1,6 +1,6 @@
 #!/bin/bash
   #####################################################################################
-  #### SUPORTE REGIONAL - SANTA INÊS - MA
+  #### SUPORTE REGIONA
   #### Nilsonlinux
   #####################################################################################
 # #####################################################################################
@@ -12,22 +12,22 @@
   #####################################################################################
     while true
     do
-    NOME=
+    SETOR=
     IP=
     ###############################################################################################
       FORMULARY=$(GTK_THEME="$THEME" yad --form --borders=10 --center --width=550                 \
           --window-icon="gtk-execute"  --image="printer-printing" --item-separator=","            \
           --title "$NOME_PROG"                                                                    \
           --form                                                                                  \
-          --field="N O M E  S E T O R" $NOME ""                                                   \
-          --field="I P  D A  I M P R E S O R A" $IP ""                                            \
+          --field="S E T O R" $NOME ""                                                            \
+          --field="I P" $IP ""                                                                    \
           --button="CANCELAR":1 --button="INSTALAR":0)
       [ $? != 0 ] && exit
-      NOME=$(echo $FORMULARY      | awk -F '|' '{ print $1 }')
+      SETOR=$(echo $FORMULARY  | awk -F '|' '{ print $1 }')
       IP=$(echo $FORMULARY     | awk -F '|' '{ print $2 }')
       break
       done
 #########################################################################
-sudo lpadmin -p ${NOME} -E -v socket://${IP}
+sudo lpadmin -p ${SETOR} -E -v socket://${IP}
 ##########################################################################
-xdg-open http://localhost:631/printers/${NOME}
+xdg-open http://localhost:631/printers/${SETOR}
