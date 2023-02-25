@@ -29,7 +29,8 @@
       break
       done
 #########################################################################
-sudo lpadmin -p ${SETOR} -E -v socket://${IP} && sudo cp $HOME/x11vnc/impressora.ppd /etc/cups/ppd/&{SETOR}.ppd
-#rm -rf $HOME/x11vnc
+sudo lpadmin -p ${SETOR} -E -v socket://${IP}
+sudo cp $HOME/x11vnc/impressora.ppd /etc/cups/ppd/${SETOR}.ppd
+rm -rf $HOME/x11vnc
 ##########################################################################
 xdg-open http://localhost:631/printers/${SETOR}
