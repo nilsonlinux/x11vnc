@@ -15,7 +15,8 @@
     SETOR=
     IP=
     ###############################################################################################
-      FORMULARY=$(GTK_THEME="$THEME" yad --form --borders=10 --center --width=550                 \
+      FORMULARY=$(GTK_THEME="$THEME" yad --fo
+      --borders=10 --center --width=550                 \
           --window-icon="gtk-execute"  --image="printer-printing" --item-separator=","            \
           --title "$NOME_PROG"                                                                    \
           --form                                                                                  \
@@ -29,7 +30,7 @@
       done
 #########################################################################
 sudo lpadmin -p ${SETOR} -E -v socket://${IP}
-sudo cp $HOME/x11vnc/x11vnc/impressora.ppd /etc/cups/&{SETOR}.ppd
+sudo cp $HOME/x11vnc/impressora.ppd /etc/cups/&{SETOR}.ppd
 #rm -rf $HOME/x11vnc
 ##########################################################################
 xdg-open http://localhost:631/printers/${SETOR}
