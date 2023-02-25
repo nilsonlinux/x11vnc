@@ -70,6 +70,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable x11vnc.service
 sudo systemctl start x11vnc.service
 echo -e "${vr} Instalação concluída. ${end}"
+$HOME/.local/comandos/add_printer.sh
 echo " ------------------------------------- "
 IP=$(hostname -I)
 echo "IP da Máquina 🌐: ${IP}" 
