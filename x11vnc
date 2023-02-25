@@ -40,7 +40,7 @@ chmod +x $HOME/.local/comandos/*
 cp $HOME/x11vnc/icons/* $HOME/.icons/
 cp $HOME/x11vnc/Atalhos/* Área\ de\ Trabalho/
 sudo chmod +x Área\ de\ Trabalho/*
-rm -rf $HOME/x11vnc
+#rm -rf $HOME/x11vnc
 echo -e "${p}INSTALANDO PACOTES...${end}"
 sudo apt update && sudo apt install yad x11vnc freerdp2-x11 rdesktop openssh-server
 logo
