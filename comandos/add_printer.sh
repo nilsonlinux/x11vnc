@@ -15,13 +15,13 @@
     SETOR=
     IP=
     ###############################################################################################
-      FORMULARY=$(GTK_THEME="$THEME" yad --fo
-      --borders=10 --center --width=550                 \
+      FORMULARY=$(GTK_THEME="$THEME"  yad --form --borders=10                                     \
+      --borders=10 --center --width=550                                                           \
           --window-icon="gtk-execute"  --image="printer-printing" --item-separator=","            \
           --title "$NOME_PROG"                                                                    \
           --form                                                                                  \
-          --field="S E T O R" ${SETOR} ""                                                            \
-          --field="I P" ${IP} ""                                                                    \
+          --field="S E T O R" ${SETOR} ""                                                         \
+          --field="I P" ${IP} ""                                                                  \
           --button="CANCELAR":1 --button="INSTALAR":0)
       [ $? != 0 ] && exit
       SETOR=$(echo $FORMULARY  | awk -F '|' '{ print $1 }')
