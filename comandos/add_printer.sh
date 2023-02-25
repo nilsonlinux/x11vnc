@@ -27,34 +27,4 @@
       done
 #########################################################################
 sudo lpadmin -p ${NOME} -E -v socket://${IP}
-# Verificando se o usuario digitou pelo menos o nome
-if [ -z $NOME ]
-then
-# Notificação de erro para gerar codigo
- yad --title="Aviso !"  \
-    --center                                      \
-    --width=400                                   \
-    --height=100                                  \
-    --image="$DIR/img/erro.svg"                   \
-    --fixed                                       \
-    --text="Você não digitou o nome
-no campo solicitado!"                             \
-    --text-align=center                           \
-    --button=Fechar
-else
 ##########################################################################
-  # Notificação de sucesso para gerar codigo
-  yad --title="Parabéns, Código Gerado !"    \
-      --center                                       \
-      --width=350                                    \
-      --height=110                                   \
-      --image="$DIR/img/ok.svg"                      \
-      --progress-text="Concluido 100%  !"            \
-      --percentage=99                                \
-      --progress --auto-kill                         \
-      --fixed                                        \
-      --text-align=center                            \
-      --button=Fechar                                \
-      --text="Código do(a) $NOME gerado com sucesso.
-      Desenvolvedor: Nilsonlinux"
-################################################
