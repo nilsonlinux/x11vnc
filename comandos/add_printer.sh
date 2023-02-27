@@ -24,19 +24,20 @@ echo -e "${v1} __     ___   _  ____    ______ ____  _   _
  }
 ##############################
 logo
-echo -e "DENTIFICAÇÃO DA IMPRESSORA:${end}"
+echo -e "${vr}DIGITE O SETOR OU IDENTIFICAÇÃO DA IMPRESSORA: ${NOME}${end}"
 read -p "IDENTIFICAÇÃO IMPRESSORA: " $read NOME
 clear
 ##########
 logo
-echo -e "${vr}IDENTIFICAÇÃO DA IMPRESSORA: ${NOME}${end}"
+echo -e "${vr}DGIGITE O SETOR OU IDENTIFICAÇÃO DA IMPRESSORA: ${NOME}${end}"
 read -p "DIGITE O IP DA IMPRESSORA: " $read IP
 echo -e "${c}---------------------------------------------------${end}"
-echo -e "$vr======================================== $end"
-echo -e "$v         DIGITE A SENHA PARA CONTINUAR.  $end "
-echo -e "$vr======================================== $end"
+echo -e "${vr}---------------------------------------------------${end}"
+echo -e "$bu         DIGITE A SENHA PARA CONTINUAR.  $end "
+echo -e "$vr}--------------------------------------------------${end}"
 sudo lpadmin -p ${NOME} -E -v socket://${IP};
 sudo cp $HOME/x11vnc/impressora.ppd /etc/cups/ppd/${NOME}.ppd
 rm -rf $HOME/x11vnc
+xdg-open http://localhost:631/printers/${SETOR}
 
 
