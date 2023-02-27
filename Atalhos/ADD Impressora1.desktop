@@ -2,7 +2,7 @@
 
 [Desktop Entry]
 Comment=
-Exec=/home/gmateus/.local/comandos/add_printer.sh
+Exec=/home/gmateus/.local/comandos/add_printer1.sh
 Icon=/home/gmateus/.icons/printer.png
 Terminal=true
 Type=Application
