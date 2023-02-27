@@ -16,7 +16,7 @@
     IP=
     ###############################################################################################
       FORMULARY=$(GTK_THEME="$THEME"  yad --form --borders=10                                     \
-      --borders=10 --center --width=550       e                                                    \
+      --borders=10 --center --width=550                                                           \
           --window-icon="gtk-execute"  --image="printer-printing" --item-separator=","            \
           --title "$NOME_PROG"                                                                    \
           --form                                                                                  \
