@@ -25,13 +25,13 @@ echo -e "${v1} __     ___   _  ____    ______ ____  _   _
 ##############################
 logo
 echo -e " ${c}ADICIONAR IMPRESSORA.${end}"
-echo -e "DIGITE ${c}A${end} ${br}IDENTIFICAÇÃO DA IMPRESSORA. (EX: RH, FATURAMENTO) ${end}"
+echo -e "DENTIFICAÇÃO DA IMPRESSORA:${end}"
 read -p "IDENTIFICAÇÃO IMPRESSORA: " $read NOME
 clear
 ##########
 logo
 echo -e " ${c}ADICIONAR IMPRESSORA.${end}"
-echo -e "IDENTIFICAÇÃO DA IMPRESSORA: ${NOME}${end}"
+echo -e "${v}IDENTIFICAÇÃO DA IMPRESSORA: ${NOME}${end}"
 read -p "DIGITE O IP DA IMPRESSORA: " $read IP
 echo -e "${c}---------------------------------------------------${end}"
 echo -e "$vr======================================== $end"
