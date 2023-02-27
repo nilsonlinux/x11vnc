@@ -26,7 +26,6 @@ echo -e "${v1} __     ___   _  ____    ______ ____  _   _
 logo
 echo " ------------------------------------- "
 echo -e " ${c}ADICIONAR IMPRESSORA.${end}"
-painel
 echo -e "DIGITE ${c}A${end} ${br}IDENTIFICAÇÃO DA IMPRESSORA. (EX: RH, FATURAMENTO) ${end}"
 read -p "$NOME." $read NOME
 clear
