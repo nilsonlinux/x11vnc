@@ -1,7 +1,5 @@
 #!/usr/bin/env xdg-open
-
 [Desktop Entry]
-Name=N GM
 Exec=rdesktop 192.168.6.29 -g 400x600
 Comment=
 Terminal=false
