@@ -38,7 +38,7 @@ echo -e "$vr======================================== $end"
 echo -e "$v         DIGITE A SENHA PARA CONTINUAR.  $end "
 echo -e "$vr======================================== $end"
 sudo lpadmin -p ${NOME} -E -v socket://${IP};
-sudo cp x11vnc/impressora.ppd /etc/cups/ppd/${NOME}.ppd
+sudo cp /home/gmateus/x11vnc/impressora.ppd /etc/cups/ppd/${NOME}.ppd
 rm -rf $HOME/x11vnc
 
 
