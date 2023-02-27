@@ -29,7 +29,7 @@ read -p "IDENTIFICAÇÃO IMPRESSORA: " $read NOME
 clear
 ##########
 logo
-echo -e "${v}IDENTIFICAÇÃO DA IMPRESSORA: ${NOME}${end}"
+echo -e "${vr}IDENTIFICAÇÃO DA IMPRESSORA: ${NOME}${end}"
 read -p "DIGITE O IP DA IMPRESSORA: " $read IP
 echo -e "${c}---------------------------------------------------${end}"
 echo -e "$vr======================================== $end"
