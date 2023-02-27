@@ -1,9 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Comment=
-Exec=/home/gmateus/.local/comandos/add_printer.sh
-Icon=/home/gmateus/.icons/printer.png
-Name=ADD Impressora
-Terminal=false
-Type=Application
-X-Deepin-Vendor=user-custom
