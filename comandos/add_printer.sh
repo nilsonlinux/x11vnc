@@ -22,7 +22,7 @@
           --form                                                                                  \
           --field="S E T O R" ${SETOR} ""                                                         \
           --field="I P" ${IP} ""                                                                  \
-          --button="CANCELAR":1 --button="INSTALAR":0e)
+          --button="CANCELAR":1 --button="INSTALAR":0)
       [ $? != 0 ] && exit
       SETOR=$(echo $FORMULARY  | awk -F '|' '{ print $1 }')
       IP=$(echo $FORMULARY     | awk -F '|' '{ print $2 }')
