@@ -3,7 +3,7 @@
 Comment=
 Exec=/home/gmateus/.local/comandos/add_printer.sh
 Icon=/home/gmateus/.icons/printer.png
-Name=MEU IP
+Name=ADD Impressora
 Terminal=false
 Type=Application
 X-Deepin-Vendor=user-custom
