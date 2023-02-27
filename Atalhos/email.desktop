@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Email
 Exec=firefox https://email.grupomateus.com.br/
-Icon=/home/gmateus/.icons/mail.png
+Icon=/home/gmateus/.icons/email.png
 Terminal=false
 Type=Application
 StartupNotify=true
